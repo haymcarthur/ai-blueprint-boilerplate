@@ -1,0 +1,57 @@
+{
+  "$schema": "https://raw.githubusercontent.com/haymcarthur/ai-blueprint-boilerplate/main/schemas/naming-registry.schema.json",
+  "version": "1.0.0",
+  "aliases": [
+    {
+      "figmaName": "DS/Components/Button/Primary",
+      "codeName": "Button",
+      "variant": "primary",
+      "description": "Primary button component"
+    },
+    {
+      "figmaName": "icon/arrow-left",
+      "codeName": "ArrowLeftIcon",
+      "isExternalLibrary": true,
+      "libraryName": "lucide-react",
+      "importPath": "lucide-react"
+    }
+  ],
+  "rules": [
+    {
+      "pattern": "^DS/",
+      "action": "strip",
+      "description": "Remove design system prefix"
+    },
+    {
+      "pattern": "^Components/",
+      "action": "strip",
+      "description": "Remove Components/ prefix"
+    },
+    {
+      "pattern": "^Primitive",
+      "action": "strip",
+      "description": "Remove Primitive prefix"
+    },
+    {
+      "pattern": "^icon/",
+      "action": "prefix-Icon",
+      "description": "Add Icon suffix to icon components"
+    },
+    {
+      "pattern": "^icons/",
+      "action": "prefix-Icon",
+      "description": "Add Icon suffix to icons"
+    },
+    {
+      "pattern": "^@[a-z-]+/",
+      "action": "mark-external",
+      "description": "Mark scoped packages as external"
+    }
+  ],
+  "externalLibraryPatterns": [
+    "\\/",
+    "^icon\\/",
+    "^icons\\/",
+    "^@[a-z-]+\\/"
+  ]
+}

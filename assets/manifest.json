@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/haymcarthur/ai-blueprint-boilerplate/main/schemas/asset-manifest.schema.json",
+  "version": "1.0.0",
+  "icons": [
+    {
+      "name": "example-icon",
+      "path": "assets/icons/example-icon.svg",
+      "size": "24x24",
+      "format": "svg",
+      "description": "Example icon"
+    }
+  ],
+  "images": [
+    {
+      "name": "hero-background",
+      "path": "assets/images/hero-background.png",
+      "width": 1440,
+      "height": 600,
+      "format": "png",
+      "description": "Hero section background image"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Inter",
+      "files": [
+        {
+          "weight": 400,
+          "style": "normal",
+          "path": "assets/fonts/Inter-Regular.woff2",
+          "format": "woff2"
+        },
+        {
+          "weight": 700,
+          "style": "normal",
+          "path": "assets/fonts/Inter-Bold.woff2",
+          "format": "woff2"
+        }
+      ]
+    }
+  ]
+}

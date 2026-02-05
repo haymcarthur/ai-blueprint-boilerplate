@@ -1,0 +1,48 @@
+{
+  "name": "ai-blueprint-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate repository for AI Blueprint Figma → Code workflow",
+  "type": "module",
+  "scripts": {
+    "bootstrap": "node scripts/bootstrap.js",
+    "generate:tokens": "node scripts/generate-tokens.js",
+    "generate:components": "node scripts/generate-components.js",
+    "storybook": "storybook dev -p 6006",
+    "build:storybook": "storybook build",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json}\"",
+    "lint": "eslint src --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^7.6.0",
+    "@storybook/addon-essentials": "^7.6.0",
+    "@storybook/react": "^7.6.0",
+    "@storybook/react-vite": "^7.6.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.1.0",
+    "storybook": "^7.6.0",
+    "storybook-design-token": "^3.0.0",
+    "typescript": "^5.3.0",
+    "vite": "^5.0.0"
+  },
+  "keywords": [
+    "figma",
+    "design-system",
+    "design-tokens",
+    "code-generation",
+    "ai",
+    "storybook"
+  ],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://raw.githubusercontent.com/haymcarthur/ai-blueprint-boilerplate/main/schemas/plugin-hooks.schema.json",
+  "version": "1.0.0",
+  "hooks": {
+    "onBootstrapExport": {
+      "description": "Run after Bootstrap export completes",
+      "commands": [
+        "npm run generate:tokens",
+        "npm run format",
+        "npm run build:storybook"
+      ]
+    },
+    "onScreenExport": {
+      "description": "Run after Screen export completes",
+      "commands": [
+        "npm run generate:components",
+        "npm run format"
+      ]
+    },
+    "postExport": {
+      "description": "Run after any export type",
+      "commands": [
+        "npm run typecheck"
+      ]
+    },
+    "preBootstrap": {
+      "description": "Run before bootstrap script",
+      "commands": [
+        "npm run lint"
+      ]
+    }
+  },
+  "options": {
+    "continueOnError": false,
+    "timeout": 300000,
+    "shell": "bash"
+  }
+}
